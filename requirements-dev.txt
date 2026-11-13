@@ -1,0 +1,6 @@
+# Optional: only needed to re-record the demo video (scripts/record_demo.py)
+#   pip install -r requirements-dev.txt
+#   python -m playwright install ffmpeg
+-r requirements.txt
+playwright
+imageio-ffmpeg

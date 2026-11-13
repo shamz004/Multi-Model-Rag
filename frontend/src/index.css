@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  --color-accent: #0f766e;
+  --color-accent-soft: #f0fdfa;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: #fafaf9;
+  color: #1c1917;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Rendered answer text */
+.answer > :first-child { margin-top: 0; }
+.answer > :last-child { margin-bottom: 0; }
+.answer p { margin: 0.6em 0; line-height: 1.65; }
+.answer ul, .answer ol { margin: 0.6em 0; padding-left: 1.4em; }
+.answer ul { list-style: disc; }
+.answer ol { list-style: decimal; }
+.answer li { margin: 0.25em 0; line-height: 1.6; }
+.answer strong { font-weight: 600; }
+.answer h1, .answer h2, .answer h3 { font-weight: 600; margin: 0.9em 0 0.4em; }
+.answer code { background: #f5f5f4; border-radius: 3px; padding: 0.1em 0.35em; font-size: 0.9em; }
+.answer table { border-collapse: collapse; margin: 0.8em 0; font-size: 0.92em; display: block; overflow-x: auto; }
+.answer th, .answer td { border: 1px solid #e7e5e4; padding: 0.4em 0.7em; text-align: left; }
+.answer th { background: #fafaf9; font-weight: 600; }
+
+.thin-scroll { scrollbar-width: thin; scrollbar-color: #d6d3d1 transparent; }
+
+@keyframes blink { 50% { opacity: 0; } }
+.caret::after { content: ""; display: inline-block; width: 7px; height: 1.05em; margin-left: 2px; vertical-align: text-bottom; background: #1c1917; animation: blink 1s steps(1) infinite; }

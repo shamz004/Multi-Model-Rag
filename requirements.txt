@@ -1,0 +1,17 @@
+# Folio - Multi-Document RAG System
+# Python 3.11+        Install:  pip install -r requirements.txt
+
+# --- Web API ---------------------------------------------------------------
+fastapi==0.162.6            # HTTP API framework
+uvicorn[standard]==0.54.0   # ASGI server that runs the API
+python-multipart==0.0.33    # multipart/form-data parsing for PDF uploads
+pydantic-settings==2.16.3   # typed configuration loaded from .env
+
+# --- RAG pipeline ----------------------------------------------------------
+openai==3.50.0              # embeddings + chat completions
+pymupdf==2.1                # PDF text extraction (page by page)
+numpy==2.4.6                # vector maths for cosine-similarity search
+
+# --- Testing ---------------------------------------------------------------
+pytest==9.2.0               # test runner
+httpx==0.28.1               # HTTP client used by the API tests and scripts

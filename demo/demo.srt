@@ -1,0 +1,63 @@
+1
+00:00:00,385 --> 00:00:05,248
+Folio answers questions across multiple PDF documents, using only what the documents say.
+
+2
+00:00:05,298 --> 00:00:09,363
+Step 1. Upload several PDF reports at once: two annual reports, a sustainability report and a security policy.
+
+3
+00:00:09,413 --> 00:00:13,860
+Each file is read page by page, split into passages and indexed for search.
+
+4
+00:00:13,910 --> 00:00:24,262
+Step 2. Ask a question in plain English.
+
+5
+00:00:24,312 --> 00:00:29,679
+The answer is written only from the documents. Every statement carries a numbered source reference.
+
+6
+00:00:29,729 --> 00:00:39,366
+Step 3. Click a reference to see the exact passage and the original PDF page it came from.
+
+7
+00:00:39,416 --> 00:00:51,075
+Questions can span documents. This one needs both the 2023 and the 2024 annual report.
+
+8
+00:00:51,125 --> 00:00:57,606
+The answer combines the two reports and cites each one separately.
+
+9
+00:00:57,656 --> 00:01:15,459
+Conversation memory. Start with a question, then ask follow-ups without repeating the details.
+
+10
+00:01:15,509 --> 00:01:31,140
+"They" and "it" are resolved from the conversation. The line above the answer shows how the question was understood.
+
+11
+00:01:31,190 --> 00:01:40,904
+What if the answer is not in the documents?
+
+12
+00:01:40,954 --> 00:01:47,476
+The system says it could not find the information instead of guessing, and shows no sources.
+
+13
+00:01:47,526 --> 00:02:03,185
+You can limit the search to selected documents. Here only the security policy stays ticked.
+
+14
+00:02:03,235 --> 00:02:14,839
+The answer and its references now come from the security policy alone.
+
+15
+00:02:14,889 --> 00:02:21,381
+Every conversation is saved. Reopening one restores its questions, answers and sources.
+
+16
+00:02:21,431 --> 00:02:26,793
+Folio: FastAPI, React, SQLite, hybrid retrieval (vector + keyword search) and OpenAI models.
